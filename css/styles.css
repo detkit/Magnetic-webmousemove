@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__main {
+  background-color: #111622;
+  min-height: 100dvh;
+}
+
+.main__title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__title .title__part-one {
+  display: flex;
+  font-size: 6em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 5px 25px rgb(17, 22, .5);
+}
+
+.main__title .title__part-one .letter:not(:last-child) {
+  letter-spacing: 10px;
+}
+
+.title__blue {
+  color: #4361ee;
+}
+
+.title__red {
+  color: #f72585;
+}
+
+.main__title .title__part-two {
+  color: #fff;
+  display: flex;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+.main__title .title__part-two .letter {
+  width: 60px;
+  text-align: center;
+}
+
+.section__two {
+  background: #fefefe;
+  min-height: 100dvh;
+}
+
+.card__container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5em;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: fit-content;
+  box-shadow: 0 5px 25px rgb(0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.card__image img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__info {
+  position: relative;
+  padding: 21px;
+  text-align: center;
+}
+
+.card__info .card__desc {
+  color: #222;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.card__info .btn {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 400;
+  padding: 8px 18px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #4361ee;
+}
+
+.btn-red {
+  background-color: #f72585;
+}
+
+.card__info .card__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.card__info .card__media a {
+  color: #999;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.card__info .card__media a:hover {
+  color: #00bbf9;
+}
+
+@media screen and (max-width: 1210px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .card__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main__title .title__part-one {
+    font-size: 15vw;
+    margin-bottom: 20px;
+  }
+
+  .main__title .title__part-two {
+    font-size: 7.5vw;
+  }
+
+  .main__title .title__part-two .letter {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-wdith: 415px) {
+  .main__title .title__part-two .letter {
+    font-size: 40px;
+  }
+
+  .card__container {
+    margin: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
